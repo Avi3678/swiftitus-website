@@ -166,8 +166,14 @@
 }
 
 .capability-icon {
-  font-size: 1.8rem;
-  margin-bottom: 18px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--amber);
+  padding-bottom: 16px;
 }
 
 .capability-title {
