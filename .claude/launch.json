@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "swiftitus",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8743", "--directory", "/Users/avibedi/Desktop/swiftitus-website"],
+      "port": 8743,
+      "proxyPort": 8743
+    }
+  ]
+}
