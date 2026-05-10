@@ -2,6 +2,303 @@
    Swift Technologies — Main Stylesheet
    ============================================================ */
 
+/* ============================================================
+   ORACLE SERVICES — 3-COLUMN LAYOUT
+   ============================================================ */
+
+.oracle-section {
+  background: var(--white);
+}
+
+.oracle-intro {
+  padding: 64px 0 0;
+  text-align: center;
+}
+
+.oracle-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr 300px;
+  border-top: 1px solid var(--border);
+  margin-top: 48px;
+}
+
+/* Left sidebar */
+.oracle-sidebar {
+  background: #f5f3ff;
+  border-right: 1px solid rgba(124,58,237,0.12);
+}
+
+.oracle-sidebar-item {
+  display: block;
+  padding: 18px 28px;
+  font-size: 0.94rem;
+  font-weight: 500;
+  color: var(--text-mid);
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid rgba(124,58,237,0.08);
+  transition: all var(--transition);
+}
+
+.oracle-sidebar-item:hover {
+  background: rgba(124,58,237,0.08);
+  color: var(--purple);
+  border-left-color: var(--purple-light);
+}
+
+.oracle-sidebar-item.active {
+  background: rgba(124,58,237,0.12);
+  color: var(--text-dark);
+  font-weight: 700;
+  border-left-color: var(--purple);
+}
+
+/* Middle panel */
+.oracle-main {
+  padding: 56px 52px;
+  border-right: 1px solid var(--border);
+}
+
+.oracle-main-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--purple);
+  margin-bottom: 14px;
+}
+
+.oracle-main-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.oracle-main-desc {
+  font-size: 1rem;
+  color: var(--text-gray);
+  line-height: 1.75;
+  margin-bottom: 36px;
+  max-width: 400px;
+}
+
+/* Right features panel */
+.oracle-features-panel {
+  padding: 40px 40px;
+}
+
+.oracle-features-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-gray);
+  margin-bottom: 24px;
+}
+
+.oracle-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.oracle-feature-item:last-child { border-bottom: none; }
+
+.oracle-feature-item:hover .oracle-feature-name { color: var(--purple); }
+
+.oracle-feature-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--purple-dark), var(--purple-light));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(124,58,237,0.25);
+}
+
+.oracle-feature-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: color var(--transition);
+}
+
+.oracle-feature-sub {
+  font-size: 0.8rem;
+  color: var(--text-gray);
+  margin-top: 2px;
+}
+
+/* Oracle capabilities section */
+.oracle-capabilities {
+  padding: 80px 0;
+  background: var(--off-white);
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.capability-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  border: 1.5px solid var(--border);
+  transition: all var(--transition);
+}
+
+.capability-card:hover {
+  border-color: rgba(124,58,237,0.3);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.capability-icon {
+  font-size: 1.8rem;
+  margin-bottom: 18px;
+}
+
+.capability-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.capability-desc {
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  line-height: 1.65;
+}
+
+/* Benefits strip */
+.benefits-strip {
+  padding: 64px 0;
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  text-align: center;
+}
+
+.benefit-num {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--purple);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.benefit-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.benefit-desc {
+  font-size: 0.8rem;
+  color: var(--text-gray);
+  margin-top: 4px;
+}
+
+/* Oracle implementation approach */
+.approach-section {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.approach-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  margin-top: 56px;
+  position: relative;
+}
+
+.approach-steps::before {
+  content: '';
+  position: absolute;
+  top: 32px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--purple), var(--purple-light));
+  z-index: 0;
+}
+
+.approach-step {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 0 12px;
+}
+
+.step-number {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--purple);
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  box-shadow: var(--shadow-purple);
+}
+
+.step-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.step-desc {
+  font-size: 0.8rem;
+  color: var(--text-gray);
+  line-height: 1.5;
+}
+
+/* Oracle-specific responsive */
+@media (max-width: 1100px) {
+  .oracle-layout { grid-template-columns: 240px 1fr; }
+  .oracle-features-panel { display: none; }
+}
+
+@media (max-width: 768px) {
+  .oracle-layout { grid-template-columns: 1fr; }
+  .oracle-sidebar { display: none; }
+  .oracle-main { padding: 40px 24px; border-right: none; }
+  .capabilities-grid { grid-template-columns: 1fr; }
+  .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+  .approach-steps { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .approach-steps::before { display: none; }
+}
+
+@media (max-width: 480px) {
+  .benefits-grid { grid-template-columns: 1fr; }
+  .approach-steps { grid-template-columns: 1fr; }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 /* ── Reset & Base ── */
